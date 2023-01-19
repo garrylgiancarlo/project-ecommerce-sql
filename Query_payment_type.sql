@@ -1,7 +1,7 @@
 select 
     payment_type,
     count (1) as payment_used
-from order_payment_dataset 
+from payments
 group by 1
 order by 2 desc
 ;
